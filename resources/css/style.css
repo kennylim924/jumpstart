@@ -5,6 +5,25 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+body {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 /* Override bootstrap classes */
 
 /* Navbar */
@@ -26,6 +45,7 @@ html {
 /* Jumbotron */
 
 .jumbotron {
+  height: auto;
   text-align: center;
   padding: 11.85rem 0;
   color: #fff;
@@ -45,6 +65,133 @@ html {
   margin: auto;
 }
 
+.btn {
+  padding: 1.3rem 0;
+  width: 11.4rem;
+  background-color: #399bd1;
+  box-shadow: 0 0 0.2143rem rgba(0, 0, 0, 0.5);
+  text-shadow: none;
+  border: none;
+}
+
+.btn-primary {
+  margin-top: 2.8rem;
+}
+
+.btn-primary:hover {
+  background-color: #399bd1;
+  box-shadow: 0 0 0.8571rem rgba(0, 0, 0, 0.9);
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Jumbotron images */
+
 .jumbotron-bike {
   background-image: url('../images/jumbotron-bike.jpg');
+}
+
+.jumbotron-beer {
+  background-image: url('../images/jumbotron-beer.jpg');
+}
+
+.jumbotron-flowers {
+  background-image: url('../images/jumbotron-flowers.jpg');
+}
+
+.jumbotron-duffel {
+  background-image: url('../images/jumbotron-duffel.jpg');
+}
+
+/* Featured Project */
+
+.container h2 {
+  color:#399bd1;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  transition: 0.5s;
+}
+
+.image-container img:hover {
+  opacity: 0.75;
+  transform: scale(1.3);
+}
+
+/* Featured Project Columns */
+
+.categories {
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.categories h2 {
+  color: #399bd1;
+}
+
+/* Projects Columns */
+
+.project {
+  padding-bottom: 5.85rem;
+}
+
+.project .image-container {
+  overflow: hidden;
+}
+
+/* Help */
+
+.row {
+  margin: 0;
+}
+
+.help {
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 5.2rem 0;
+}
+
+.help h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 1.4rem;
+}
+
+.help p {
+  max-width: 42rem;
+  margin: auto;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+  /* Navbar Links */
+  .nav {
+    text-align: center;
+  }
+
+  /* Jumbotron h1 */
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* Jumbotron h1 */
+  .jumbotron h1 {
+    font-size: 5.1rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  /* Jumbotron h1 */
+  .jumbotron h1 {
+    font-size: 4rem;
+  }
 }
